@@ -3,7 +3,7 @@ package ru.netology;
 import java.util.*;
 
 public class PhoneBook {
-    private final Map<String, String> phoneBookNameKey = new HashMap<>();
+    private final Map<String, String> phoneBookNameKey = new TreeMap<>();
     private final Map<String, String> phoneBookNumberKey = new HashMap<>();
 
     public int add (String name, String number){

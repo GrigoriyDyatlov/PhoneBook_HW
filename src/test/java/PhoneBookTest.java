@@ -59,6 +59,6 @@ public class PhoneBookTest {
 
         String result = phoneBook.printAllNames();
 
-        assertEquals("Alex, Kolya, Olya", result);
+        assertEquals("[Alex, Kolya, Olya]", result);
     }
 }
