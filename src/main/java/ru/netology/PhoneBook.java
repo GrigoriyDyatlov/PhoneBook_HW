@@ -24,6 +24,8 @@ public class PhoneBook {
     }
 
     public String findByName (String name) {
-        return null;
+        if (phoneBookNameKey.get(name) == null) {
+            return "Name missing";
+        } else return phoneBookNameKey.get(name);
     }
 }
