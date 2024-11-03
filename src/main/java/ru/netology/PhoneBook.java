@@ -22,4 +22,8 @@ public class PhoneBook {
             return "Number missing.";
         } else return phoneBookNumberKey.get(number);
     }
+
+    public String findByName (String name) {
+        return null;
+    }
 }

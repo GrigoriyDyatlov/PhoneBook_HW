@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a92087fc-dc01-4991-a185-cd5bfa163aba" name="Changes" comment="Stub and tests for findByNumber">
+    <list default="true" id="a92087fc-dc01-4991-a185-cd5bfa163aba" name="Changes" comment="add implement findByNumber">
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/PhoneBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PhoneBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PhoneBookTest.java" afterDir="false" />
     </list>
@@ -37,6 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.PhoneBookTest.executor": "Run",
+    "JUnit.PhoneBookTest.testFindByName.executor": "Run",
     "JUnit.PhoneBookTest.testFindByNumber.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -47,12 +48,22 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.PhoneBookTest">
+  <component name="RunManager" selected="JUnit.PhoneBookTest.testFindByName">
     <configuration name="PhoneBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PhoneBook_HW" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PhoneBookTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhoneBookTest.testFindByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhoneBook_HW" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PhoneBookTest" />
+      <option name="METHOD_NAME" value="testFindByName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PhoneBookTest.testFindByName" />
         <item itemvalue="JUnit.PhoneBookTest" />
         <item itemvalue="JUnit.PhoneBookTest.testFindByNumber" />
       </list>
@@ -123,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730656644504</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add implement findByNumber">
+      <option name="closed" value="true" />
+      <created>1730656787918</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730656787919</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,6 +162,7 @@
     <MESSAGE value="Stub and tests for add." />
     <MESSAGE value="add implemented" />
     <MESSAGE value="Stub and tests for findByNumber" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stub and tests for findByNumber" />
+    <MESSAGE value="add implement findByNumber" />
+    <option name="LAST_COMMIT_MESSAGE" value="add implement findByNumber" />
   </component>
 </project>
