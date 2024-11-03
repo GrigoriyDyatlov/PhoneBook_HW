@@ -3,6 +3,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.PhoneBook;
 
+import java.util.Set;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -47,5 +49,16 @@ public class PhoneBookTest {
         String result = phoneBook.findByName("Kolya");
 
         assertEquals("+7-913-913-91-91", result);
+    }
+
+    @Test
+    public void testPrintAllNames (){
+        phoneBook.add("Kolya", "+7-913-913-91-91");
+        phoneBook.add("Olya", "+7-913-913-91-92");
+        phoneBook.add("Alex", "+7-913-914-91-91");
+
+        String result = phoneBook.printAllNames();
+
+        assertEquals("Alex, Kolya, Olya", result);
     }
 }
