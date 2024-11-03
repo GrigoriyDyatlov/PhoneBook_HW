@@ -32,4 +32,13 @@ public class PhoneBookTest {
 
         assertEquals("This number already added.", exception.getMessage());
     }
+
+    @Test
+    public void testFindByNumber (){
+        phoneBook.add("Kolya", "+7-913-913-91-91");
+
+        String result = phoneBook.findByNumber("+7-913-913-91-91");
+
+        Assertions.assertEquals("Kolya", result);
+    }
 }

@@ -1,16 +1,23 @@
 package ru.netology;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class PhoneBook {
-    private final Map<String, String> phoneBook = new HashMap<>();
+    private final Map<String, String> phoneBookNameKey = new TreeMap<>();
+    private final Map<String, String> phoneBookNumberKey = new HashMap<>();
 
     public int add (String name, String number){
-        if (phoneBook.get(name) != null) {
+        if (phoneBookNameKey.get(name) != null) {
             IllegalStateException ex = new IllegalStateException("This number already added.");
             throw ex;
-        } else phoneBook.putIfAbsent(name, number);
-        return phoneBook.size();
+        } else {
+            phoneBookNameKey.putIfAbsent(name, number);
+            phoneBookNumberKey.putIfAbsent(number, name);
+        }
+        return phoneBookNameKey.size();
+    }
+
+    public String findByNumber (String number){
+        return null;
     }
 }
