@@ -3,8 +3,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.PhoneBook;
 
-import java.io.IOException;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -12,7 +10,7 @@ public class PhoneBookTest {
     private PhoneBook phoneBook = null;
 
     @BeforeEach
-            public void newPhoneBook() {
+    public void newPhoneBook() {
         this.phoneBook = new PhoneBook();
     }
 
@@ -28,13 +26,13 @@ public class PhoneBookTest {
         int result = phoneBook.add("Kolya", "+7-913-913-91-91");
 
         IllegalStateException exception = assertThrows(IllegalStateException.class, () ->
-        phoneBook.add("Kolya", "+7-913-913-91-91"));
+                phoneBook.add("Kolya", "+7-913-913-91-91"));
 
         assertEquals("This number already added.", exception.getMessage());
     }
 
     @Test
-    public void testFindByNumber (){
+    public void testFindByNumber() {
         phoneBook.add("Kolya", "+7-913-913-91-91");
 
         String result = phoneBook.findByNumber("+7-913-913-91-91");

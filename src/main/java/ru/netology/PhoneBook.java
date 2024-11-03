@@ -18,6 +18,8 @@ public class PhoneBook {
     }
 
     public String findByNumber (String number){
-        return null;
+        if (phoneBookNumberKey.get(number) == null) {
+            return "Number missing.";
+        } else return phoneBookNumberKey.get(number);
     }
 }
